@@ -1,0 +1,8 @@
+h1 Player 
+form(action="/players/search" ,method="GET")
+   input(type="text", name="q")
+   button Search
+
+ul
+  each val in players
+    li= val.name
